@@ -8,6 +8,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap" rel="stylesheet" />
   <!-- Dev Icon Fonts -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css" />
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -35,7 +43,7 @@
       <aside class="w-full space-y-6 lg:w-80">
         <div class="flex flex-col items-center rounded-2xl border border-slate-800 bg-slate-900/70 p-6 text-center">
           <img
-            src="assets/profile.png"
+            src="assets/image-profile.jpeg"
             alt="Foto de perfil de Fabrício Menegolo"
             class="mb-4 h-28 w-28 rounded-full border border-slate-700 object-cover"
           />
@@ -119,6 +127,92 @@
                 <p class="mt-1 text-slate-400">n8n · Orquestração</p>
               </div>
             </div>
+          </div>
+        </section>
+
+        <!-- Engineering & Home Lab -->
+        <section id="engineering" class="rounded-2xl border border-slate-800 bg-slate-900/80 p-6 lg:p-8">
+          <div class="mb-5 flex items-center justify-between gap-4">
+            <div>
+              <h3 class="text-lg font-semibold tracking-tight">Engineering &amp; Home Lab</h3>
+              <p class="mt-1 text-xs uppercase tracking-[0.2em] text-slate-400">Hands-on • Automação • Observabilidade</p>
+            </div>
+            <span class="rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-400">Lab Ativo</span>
+          </div>
+
+          <div class="mb-5 flex items-center gap-2 text-[11px] font-mono text-slate-400">
+            <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+            <span class="h-2 w-2 rounded-full bg-amber-400"></span>
+            <span class="h-2 w-2 rounded-full bg-rose-500"></span>
+            <span class="ml-3">~/home-lab &gt; tail -f engineering.log</span>
+          </div>
+
+          <div class="grid gap-4 md:grid-cols-3 text-sm">
+            <!-- Card 1 -->
+            <article class="flex flex-col justify-between rounded-xl border border-slate-800 bg-slate-950/80 p-4 shadow-[0_0_0_1px_rgba(15,23,42,0.8)]">
+              <header class="mb-3 flex items-center gap-3">
+                <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-500/10 text-emerald-400">
+                  <i class="fa-solid fa-robot text-base"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-semibold text-slate-100">AI Agentic Workflow</h4>
+                  <p class="text-[11px] font-mono uppercase tracking-[0.2em] text-slate-500">Ollama · n8n · Gitea</p>
+                </div>
+              </header>
+              <p class="mb-3 text-xs leading-relaxed text-slate-300">
+                Agente de IA (Qwen/Llama via Ollama) orquestrado pelo n8n, consumindo Issues no Gitea e gerando automaticamente
+                <span class="text-emerald-400">Technical Specs</span> versionadas em repositórios Git. Cada Issue dispara um fluxo agentic que lê o contexto,
+                propõe arquitetura de dados e registra o resultado como documentação executável.
+              </p>
+              <div class="mt-auto flex flex-wrap gap-2 text-[10px] font-mono text-slate-400">
+                <span class="rounded-full bg-slate-900 px-2 py-1">/agents/spec-writer</span>
+                <span class="rounded-full bg-slate-900 px-2 py-1">webhooks:n8n</span>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="flex flex-col justify-between rounded-xl border border-slate-800 bg-slate-950/80 p-4 shadow-[0_0_0_1px_rgba(15,23,42,0.8)]">
+              <header class="mb-3 flex items-center gap-3">
+                <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-sky-500/10 text-sky-400">
+                  <i class="fa-solid fa-server text-base"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-semibold text-slate-100">Local Datastack</h4>
+                  <p class="text-[11px] font-mono uppercase tracking-[0.2em] text-slate-500">Gitea · MinIO · Docker</p>
+                </div>
+              </header>
+              <p class="mb-3 text-xs leading-relaxed text-slate-300">
+                Home lab com <span class="text-sky-400">Gitea</span> para versionamento, <span class="text-sky-400">MinIO</span> (S3-compatible) como data lake local e
+                toda a stack containerizada em <span class="text-sky-400">Docker</span>. O objetivo é simular ambientes enterprise de dados,
+                incluindo buckets para raw/processed, usuários de serviço e políticas de acesso.
+              </p>
+              <div class="mt-auto flex flex-wrap gap-2 text-[10px] font-mono text-slate-400">
+                <span class="rounded-full bg-slate-900 px-2 py-1">stack:local-s3</span>
+                <span class="rounded-full bg-slate-900 px-2 py-1">compose:infra.yml</span>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="flex flex-col justify-between rounded-xl border border-slate-800 bg-slate-950/80 p-4 shadow-[0_0_0_1px_rgba(15,23,42,0.8)]">
+              <header class="mb-3 flex items-center gap-3">
+                <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-amber-500/10 text-amber-400">
+                  <i class="fa-solid fa-code-branch text-base"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-semibold text-slate-100">Ciclo de Desenvolvimento</h4>
+                  <p class="text-[11px] font-mono uppercase tracking-[0.2em] text-slate-500">Develop · Production · Webhooks</p>
+                </div>
+              </header>
+              <p class="mb-3 text-xs leading-relaxed text-slate-300">
+                Ambiente segregado com branches e repositórios distintos para <span class="text-amber-400">Develop</span> e <span class="text-amber-400">Production</span>,
+                usando labels em Issues/MRs para orquestrar automações via webhooks. Cada mudança passa por validação em lab antes de ser
+                promovida, garantindo trilha auditável do ciclo de vida do dado.
+              </p>
+              <div class="mt-auto flex flex-wrap gap-2 text-[10px] font-mono text-slate-400">
+                <span class="rounded-full bg-slate-900 px-2 py-1">label:env=dev|prod</span>
+                <span class="rounded-full bg-slate-900 px-2 py-1">hooks:gitea-&gt;n8n</span>
+              </div>
+            </article>
           </div>
         </section>
 
