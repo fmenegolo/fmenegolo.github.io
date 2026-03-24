@@ -45,13 +45,13 @@
           <img
             src="assets/image-profile.jpeg"
             alt="Foto de perfil de Fabrício Menegolo"
-            class="mb-4 h-28 w-28 rounded-full border border-slate-700 object-cover object-top"
+            class="mb-4 h-32 w-32 rounded-full border border-slate-700 object-cover object-[50%_18%]"
           />
           <h1 class="text-xl font-semibold tracking-tight">Fabrício Martins Menegolo</h1>
           <p class="mt-1 text-sm text-slate-400">Engenheiro de Dados</p>
           <p class="mt-4 text-sm text-slate-300">
-            De Bombeiro Militar para Engenharia de Dados — unindo disciplina, resiliência e profundidade técnica para construir pipelines
-            confiáveis.
+            De Bombeiro Militar para Engenharia de Dados — unindo disciplina, resiliência e profundidade técnica para construir pipelines de
+            dados confiáveis.
           </p>
           <div class="mt-6 flex w-full flex-col gap-3 text-sm">
             <a
@@ -174,7 +174,7 @@
                   <p class="text-[11px] font-mono uppercase tracking-[0.2em] text-slate-500">Ollama · n8n · Gitea</p>
                 </div>
               </header>
-              <p class="mb-3 text-xs leading-relaxed text-slate-300">
+              <p class="mb-3 text-[11px] leading-relaxed text-slate-300 md:text-xs">
                 Agente de IA (Qwen/Llama via Ollama) orquestrado pelo n8n, consumindo Issues no Gitea e gerando automaticamente
                 <span class="text-emerald-400">Technical Specs</span> versionadas em repositórios Git. Cada Issue dispara um fluxo agentic que lê o contexto,
                 propõe arquitetura de dados e registra o resultado como documentação executável.
@@ -196,7 +196,7 @@
                   <p class="text-[11px] font-mono uppercase tracking-[0.2em] text-slate-500">Gitea · MinIO · Docker</p>
                 </div>
               </header>
-              <p class="mb-3 text-xs leading-relaxed text-slate-300">
+              <p class="mb-3 text-[11px] leading-relaxed text-slate-300 md:text-xs">
                 Home lab com <span class="text-sky-400">Gitea</span> para versionamento, <span class="text-sky-400">MinIO</span> (S3-compatible) como data lake local e
                 toda a stack containerizada em <span class="text-sky-400">Docker</span>. O objetivo é simular ambientes enterprise de dados,
                 incluindo buckets para raw/processed, usuários de serviço e políticas de acesso.
@@ -218,7 +218,7 @@
                   <p class="text-[11px] font-mono uppercase tracking-[0.2em] text-slate-500">Develop · Production · Webhooks</p>
                 </div>
               </header>
-              <p class="mb-3 text-xs leading-relaxed text-slate-300">
+              <p class="mb-3 text-[11px] leading-relaxed text-slate-300 md:text-xs">
                 Ambiente segregado com branches e repositórios distintos para <span class="text-amber-400">Develop</span> e <span class="text-amber-400">Production</span>,
                 usando labels em Issues/MRs para orquestrar automações via webhooks. Cada mudança passa por validação em lab antes de ser
                 promovida, garantindo trilha auditável do ciclo de vida do dado.
@@ -243,7 +243,7 @@
               mesma mentalidade de missão crítica: responder rápido, sob pressão e com precisão, sempre com foco em segurança e confiabilidade.
             </p>
             <p>
-              No dia a dia, isso se traduz em pipelines batch e streaming robustos com Spark/PySpark, orquestração (Airflow, Azure Data
+              No dia a dia, isso se traduz em pipelines de dados batch e streaming robustos com Spark/PySpark, orquestração (Airflow, Azure Data
               Factory, dbt) e data lakes em cloud (AWS, Azure, GCP), com atenção a qualidade de dados, lineage e conformidade regulatória.
             </p>
             <p>
@@ -275,7 +275,7 @@
               </div>
               <p class="mt-1 text-[11px] font-mono uppercase tracking-[0.18em] text-emerald-400">Databricks · PySpark · Azure Data Factory</p>
               <p class="mt-3 text-sm text-slate-300">
-                Desenvolvimento de pipelines de ingestão e processamento de <span class="text-emerald-400">SPED Fiscal</span> em arquitetura
+                Desenvolvimento de <span class="text-emerald-400">pipelines de dados</span> para ingestão e processamento de <span class="text-emerald-400">SPED Fiscal</span> em arquitetura
                 <span class="text-emerald-400">Medallion (Bronze, Silver, Gold)</span> no Databricks, com jobs PySpark orquestrados via Azure Data Factory para lidar com
                 grandes volumes de documentos fiscais em ambiente enterprise.
               </p>
@@ -307,8 +307,8 @@
               </div>
               <p class="mt-1 text-[11px] font-mono uppercase tracking-[0.18em] text-slate-400">AWS • Glue • PySpark • Lambda • Athena</p>
               <p class="mt-3 text-sm text-slate-300">
-                Atuação em ambiente ágil na AWS Cloud, construindo pipelines ETL com Glue e PySpark, ingestão via Lambda e análise com Athena
-                e QuickSight. Estruturação de data lake em zonas (RAW, Trusted, Refined) e modelagem para análises de negócio.
+                Atuação em ambiente ágil na AWS Cloud, construindo <span class="text-emerald-400">pipelines de dados</span> ETL com Glue e PySpark, ingestão via Lambda e
+                análise com Athena e QuickSight. Estruturação de data lake em zonas (RAW, Trusted, Refined) e modelagem para análises de negócio.
               </p>
             </div>
 
@@ -318,12 +318,12 @@
               <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400">
                 <span class="font-semibold text-slate-200">Projetos Autorais</span>
                 <span class="h-1 w-1 rounded-full bg-slate-500"></span>
-                <span>Home Lab &amp; Data Pipelines</span>
+                <span>Home Lab &amp; Pipelines de Dados</span>
               </div>
               <p class="mt-1 text-[11px] font-mono uppercase tracking-[0.18em] text-slate-400">GitOps · Observabilidade · Automação</p>
               <p class="mt-3 text-sm text-slate-300">
                 Construção de um ecossistema local de dados conectado ao home lab descrito acima, testando estratégias de versionamento,
-                governança e monitoramento de pipelines antes de levar para ambientes corporativos.
+                governança e monitoramento de <span class="text-emerald-400">pipelines de dados</span> antes de levar para ambientes corporativos.
               </p>
             </div>
           </div>
@@ -339,9 +339,11 @@
             <article class="flex flex-col justify-between rounded-xl border border-slate-800 bg-slate-950 p-4">
               <div>
                 <p class="text-sm font-medium text-slate-100">Databricks Data Engineer Associate</p>
-                <p class="mt-1 text-xs text-slate-400">Certificação Databricks Data Engineer Associate (2026)</p>
+                <p class="mt-1 text-xs text-slate-400">Certificação Databricks Data Engineer Associate 
+                  <span class="text-emerald-400">concluída em 2026</span>
+                </p>
               </div>
-              <p class="mt-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-brand-400">Foco Principal</p>
+              <p class="mt-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-brand-400">Base para ambientes Lakehouse em escala</p>
             </article>
 
             <article class="flex flex-col justify-between rounded-xl border border-slate-800 bg-slate-950 p-4">
@@ -349,7 +351,7 @@
                 <p class="text-sm font-medium text-slate-100">AWS Cloud Practitioner</p>
                 <p class="mt-1 text-xs text-slate-400">Fundamentos de Cloud e FinOps em AWS (2023)</p>
               </div>
-              <p class="mt-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-400">Certificação Concluída</p>
+              <p class="mt-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-400">Base para governança e FinOps em Cloud</p>
             </article>
 
             <article class="flex flex-col justify-between rounded-xl border border-slate-800 bg-slate-950 p-4">
@@ -357,7 +359,7 @@
                 <p class="text-sm font-medium text-slate-100">Microsoft Azure Data Fundamentals (DP-900)</p>
                 <p class="mt-1 text-xs text-slate-400">Fundamentos de dados em Azure (2022)</p>
               </div>
-              <p class="mt-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-400">Certificação Concluída</p>
+              <p class="mt-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-400">Fundação para workloads analíticos em Azure</p>
             </article>
 
             <article class="flex flex-col justify-between rounded-xl border border-slate-800 bg-slate-950 p-4">
@@ -365,7 +367,7 @@
                 <p class="text-sm font-medium text-slate-100">GCP Associate Cloud Engineer</p>
                 <p class="mt-1 text-xs text-slate-400">Compute, redes e dados em Google Cloud (2022)</p>
               </div>
-              <p class="mt-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-400">Certificação Concluída</p>
+              <p class="mt-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-400">Experiência em ambientes distribuídos na GCP</p>
             </article>
 
             <article class="flex flex-col justify-between rounded-xl border border-slate-800 bg-slate-950 p-4">
@@ -373,7 +375,7 @@
                 <p class="text-sm font-medium text-slate-100">Oracle Fusion AI Agent Studio</p>
                 <p class="mt-1 text-xs text-slate-400">Certified Foundations Associate (2025)</p>
               </div>
-              <p class="mt-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-400">Certificação Concluída</p>
+              <p class="mt-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-400">IA aplicada a processos corporativos</p>
             </article>
           </div>
         </section>
@@ -501,6 +503,7 @@
           Foco em soluções de dados com impacto direto em negócio: eficiência operacional, redução de custos de plataforma e aumento de
           confiabilidade das decisões baseadas em dados.
         </p>
+        <p class="mt-1 text-[10px] text-slate-600">Última atualização: 2026</p>
       </div>
     </div>
   </footer>
